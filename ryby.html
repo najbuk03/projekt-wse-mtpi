@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryby - Informator dla wędkarza</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="accessibility-panel" aria-label="Ułatwienia dostępności WCAG">
+        <button type="button" id="fontToggle" class="accessibility-btn" title="Powiększ lub przywróć czcionkę" aria-label="Powiększ lub przywróć czcionkę">A+</button>
+        <button type="button" id="contrastToggle" class="accessibility-btn" title="Włącz lub wyłącz wysoki kontrast" aria-label="Włącz lub wyłącz wysoki kontrast">◐</button>
+    </div>
+
+<header class="page-header">
+    <nav class="navbar">
+        <div class="logo">🎣 Informator dla wędkarza</div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="jeziora.html">Jeziora</a></li>
+            <li><a href="ryby.html">Ryby</a></li>
+            <li><a href="ochrona.html">Ochrona</a></li>
+            <li><a href="oplaty.html">Opłaty</a></li>
+            <li><a href="sklepy.html">Sklepy</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="opis-projektu.pdf" target="_blank" rel="noopener">Opis projektu</a></li>
+        </ul>
+    </nav>
+    <h1>Atlas ryb</h1>
+</header>
+<main class="container">
+    <p class="lead">Poniżej znajdują się przykładowe gatunki ryb występujące w jeziorach regionu.</p>
+    <section class="table-wrapper">
+        <table>
+            <thead>
+                <tr><th>Gatunek</th><th>Opis</th><th>Typowe środowisko</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Szczupak</td><td>Drapieżnik, często spotykany przy roślinności wodnej.</td><td>Jeziora, zatoki, trzcinowiska</td></tr>
+                <tr><td>Okoń</td><td>Popularna ryba drapieżna, występuje stadnie.</td><td>Jeziora i rzeki</td></tr>
+                <tr><td>Sandacz</td><td>Ceniony gatunek drapieżny, aktywny szczególnie wieczorem.</td><td>Większe jeziora</td></tr>
+                <tr><td>Leszcz</td><td>Ryba spokojnego żeru, często łowiona z gruntu.</td><td>Głębsze partie jezior</td></tr>
+                <tr><td>Lin</td><td>Ryba lubiąca spokojne i zarośnięte miejsca.</td><td>Płytkie zatoki</td></tr>
+                <tr><td>Karaś</td><td>Odporny gatunek żyjący w wodach stojących.</td><td>Stawy i jeziora</td></tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+<footer><p>Informator dla wędkarza | Metodologia Tworzenia Projektów Informatycznych | WSE Białystok 2026</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informator dla wędkarza</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="accessibility-panel" aria-label="Ułatwienia dostępności WCAG">
+        <button type="button" id="fontToggle" class="accessibility-btn" title="Powiększ lub przywróć czcionkę" aria-label="Powiększ lub przywróć czcionkę">A+</button>
+        <button type="button" id="contrastToggle" class="accessibility-btn" title="Włącz lub wyłącz wysoki kontrast" aria-label="Włącz lub wyłącz wysoki kontrast">◐</button>
+    </div>
+
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">🎣 Informator dla wędkarza</div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Start</a></li>
+                <li><a href="jeziora.html">Jeziora</a></li>
+                <li><a href="ryby.html">Ryby</a></li>
+                <li><a href="ochrona.html">Ochrona</a></li>
+                <li><a href="oplaty.html">Opłaty</a></li>
+                <li><a href="sklepy.html">Sklepy</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="opis-projektu.pdf" target="_blank" rel="noopener">Opis projektu</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Informator dla wędkarza</h1>
+            <p>Praktyczny serwis o jeziorach Suwalszczyzny i okolic Augustowa.</p>
+            <a class="button" href="jeziora.html">Zobacz jeziora</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro project-highlight">
+            <p class="course-label">Projekt zaliczeniowy</p>
+            <h2>Metodologia Tworzenia Projektów Informatycznych</h2>
+            <p>
+                Projekt został realizowany w ramach zajęć <strong>Metodologia Tworzenia Projektów Informatycznych</strong>
+                na kierunku Informatyka Stosowana. Aplikacja została wykonana w technologiach
+                <strong>HTML5</strong>, <strong>CSS3</strong> oraz <strong>JavaScript</strong>.
+            </p>
+            <p>
+                Celem serwisu jest zebranie w jednym miejscu najważniejszych informacji dla wędkarzy
+                odwiedzających jeziora Suwalszczyzny i okolic Augustowa.
+            </p>
+            <a class="button secondary" href="opis-projektu.pdf" target="_blank" rel="noopener">Otwórz opis projektu PDF</a>
+        </section>
+
+        <section class="cards three">
+            <article class="card">
+                <h3>Jeziora</h3>
+                <p>Opisy popularnych jezior regionu, takich jak Wigry, Hańcza, Necko i Sajno.</p>
+                <a href="jeziora.html">Przejdź</a>
+            </article>
+            <article class="card">
+                <h3>Ryby</h3>
+                <p>Informacje o gatunkach ryb występujących w jeziorach Suwalszczyzny i Augustowa.</p>
+                <a href="ryby.html">Przejdź</a>
+            </article>
+            <article class="card">
+                <h3>Okresy ochronne</h3>
+                <p>Podstawowe informacje o ochronie wybranych gatunków ryb.</p>
+                <a href="ochrona.html">Przejdź</a>
+            </article>
+        </section>
+
+        <section class="team-box">
+            <div>
+                <p class="course-label">Zespół projektowy</p>
+                <h2>Autorzy projektu</h2>
+                <p class="lead-small">Projekt „Informator dla wędkarza” został przygotowany przez zespół studentów WSE w Białymstoku.</p>
+            </div>
+            <div class="team-grid">
+                <article>
+                    <h3>Kamil Żero</h3>
+                    <p>Treści dotyczące jezior, ryb i informacji regionalnych.</p>
+                </article>
+                <article>
+                    <h3>Marek Najbuk</h3>
+                    <p>Koordynacja projektu, wdrożenie na Raspberry Pi i dokumentacja.</p>
+                </article>
+                <article>
+                    <h3>Marek Palinowski</h3>
+                    <p>Implementacja HTML, CSS, JavaScript oraz testowanie aplikacji.</p>
+                </article>
+            </div>
+            <p class="project-doc-link">
+                Pełny opis projektu: <a href="opis-projektu.pdf" target="_blank" rel="noopener">opis-projektu.pdf</a>
+            </p>
+        </section>
+
+        <section class="notice">
+            <h2>Dlaczego powstał ten serwis?</h2>
+            <p>
+                Zespół projektowy interesuje się wędkarstwem, dlatego temat jest nam bliski.
+                W praktyce często trzeba szukać informacji w wielu miejscach. Ten serwis porządkuje
+                podstawowe dane i prezentuje je w prostej formie.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projekt: Kamil Żero, Marek Najbuk, Marek Palinowski | Metodologia Tworzenia Projektów Informatycznych | WSE Białystok 2026</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

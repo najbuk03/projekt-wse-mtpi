@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeziora - Informator dla wędkarza</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="accessibility-panel" aria-label="Ułatwienia dostępności WCAG">
+        <button type="button" id="fontToggle" class="accessibility-btn" title="Powiększ lub przywróć czcionkę" aria-label="Powiększ lub przywróć czcionkę">A+</button>
+        <button type="button" id="contrastToggle" class="accessibility-btn" title="Włącz lub wyłącz wysoki kontrast" aria-label="Włącz lub wyłącz wysoki kontrast">◐</button>
+    </div>
+
+<header class="page-header">
+    <nav class="navbar">
+        <div class="logo">🎣 Informator dla wędkarza</div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="jeziora.html">Jeziora</a></li>
+            <li><a href="ryby.html">Ryby</a></li>
+            <li><a href="ochrona.html">Ochrona</a></li>
+            <li><a href="oplaty.html">Opłaty</a></li>
+            <li><a href="sklepy.html">Sklepy</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="opis-projektu.pdf" target="_blank" rel="noopener">Opis projektu</a></li>
+        </ul>
+    </nav>
+    <h1>Jeziora Suwalszczyzny i okolic Augustowa</h1>
+</header>
+
+<main class="container">
+    <section>
+        <p class="lead">Poniżej przedstawiono wybrane jeziora, które są popularne wśród wędkarzy i turystów odwiedzających północno-wschodnią Polskę.</p>
+        <input type="text" id="searchInput" class="search" placeholder="Szukaj jeziora, np. Wigry, Hańcza...">
+    </section>
+
+    <section class="cards" id="filterList">
+        <article class="card searchable">
+            <h2>Jezioro Wigry</h2>
+            <p><strong>Region:</strong> okolice Suwałk</p>
+            <p>Jedno z najbardziej znanych jezior Suwalszczyzny. Charakteryzuje się urozmaiconą linią brzegową i dużą wartością przyrodniczą.</p>
+            <p><strong>Ryby:</strong> szczupak, okoń, leszcz, sieja, sielawa.</p>
+        </article>
+        <article class="card searchable">
+            <h2>Jezioro Hańcza</h2>
+            <p><strong>Region:</strong> Suwalski Park Krajobrazowy</p>
+            <p>Najgłębsze jezioro w Polsce. Znane z czystej wody i stromych brzegów.</p>
+            <p><strong>Ryby:</strong> okoń, szczupak, miętus, sieja.</p>
+        </article>
+        <article class="card searchable">
+            <h2>Jezioro Necko</h2>
+            <p><strong>Region:</strong> Augustów</p>
+            <p>Popularne jezioro położone w granicach Augustowa, często odwiedzane przez turystów i wędkarzy.</p>
+            <p><strong>Ryby:</strong> szczupak, sandacz, leszcz, płoć, okoń.</p>
+        </article>
+        <article class="card searchable">
+            <h2>Jezioro Białe Augustowskie</h2>
+            <p><strong>Region:</strong> Augustów</p>
+            <p>Atrakcyjne jezioro rekreacyjne z dobrym dostępem do brzegu i zapleczem turystycznym.</p>
+            <p><strong>Ryby:</strong> okoń, szczupak, lin, leszcz.</p>
+        </article>
+        <article class="card searchable">
+            <h2>Jezioro Sajno</h2>
+            <p><strong>Region:</strong> okolice Augustowa</p>
+            <p>Duże jezioro położone w pobliżu Augustowa, cenione przez wędkarzy za różnorodność gatunków.</p>
+            <p><strong>Ryby:</strong> sandacz, szczupak, okoń, leszcz.</p>
+        </article>
+    </section>
+</main>
+
+<footer><p>Informator dla wędkarza | Metodologia Tworzenia Projektów Informatycznych | WSE Białystok 2026</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>

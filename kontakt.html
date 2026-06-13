@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Informator dla wędkarza</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="accessibility-panel" aria-label="Ułatwienia dostępności WCAG">
+        <button type="button" id="fontToggle" class="accessibility-btn" title="Powiększ lub przywróć czcionkę" aria-label="Powiększ lub przywróć czcionkę">A+</button>
+        <button type="button" id="contrastToggle" class="accessibility-btn" title="Włącz lub wyłącz wysoki kontrast" aria-label="Włącz lub wyłącz wysoki kontrast">◐</button>
+    </div>
+
+<header class="page-header">
+    <nav class="navbar">
+        <div class="logo">🎣 Informator dla wędkarza</div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="jeziora.html">Jeziora</a></li>
+            <li><a href="ryby.html">Ryby</a></li>
+            <li><a href="ochrona.html">Ochrona</a></li>
+            <li><a href="oplaty.html">Opłaty</a></li>
+            <li><a href="sklepy.html">Sklepy</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="opis-projektu.pdf" target="_blank" rel="noopener">Opis projektu</a></li>
+        </ul>
+    </nav>
+    <h1>Kontakt</h1>
+</header>
+<main class="container narrow">
+    <p class="lead">Masz propozycję dodania jeziora, sklepu albo poprawienia informacji? Wyślij wiadomość.</p>
+    <form id="contactForm" class="form">
+        <label for="name">Imię</label>
+        <input type="text" id="name" placeholder="Wpisz imię">
+
+        <label for="email">Adres e-mail</label>
+        <input type="email" id="email" placeholder="np. adres@email.pl">
+
+        <label for="topic">Temat</label>
+        <input type="text" id="topic" placeholder="Temat wiadomości">
+
+        <label for="message">Treść wiadomości</label>
+        <textarea id="message" rows="6" placeholder="Wpisz treść wiadomości"></textarea>
+
+        <button type="submit" class="button">Wyślij</button>
+        <p id="formMessage" class="form-message"></p>
+    </form>
+</main>
+<footer><p>Informator dla wędkarza | Metodologia Tworzenia Projektów Informatycznych | WSE Białystok 2026</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
