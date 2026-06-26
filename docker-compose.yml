@@ -1,0 +1,33 @@
+services:
+
+  web:
+    build: .
+    container_name: wedkarz-web
+
+    ports:
+      - "80:80"
+
+    depends_on:
+      - db
+
+    restart: unless-stopped
+
+  db:
+    image: mariadb:10.11
+
+    container_name: wedkarz-db
+
+    restart: unless-stopped
+
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: wedkarz
+      MYSQL_USER: wedkarz
+      MYSQL_PASSWORD: wedkarzpass
+
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./database.sql:/docker-entrypoint-initdb.d/database.sql
+
+volumes:
+  db_data:

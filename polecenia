@@ -1,0 +1,2 @@
+docker cp index.php wedkarz-web:/var/www/html/index.php
+docker exec -it wedkarz-web bash
